@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fee9f0;
+  /* background-color: #fee9f0; */
   font-size: 16px;
 }
 
@@ -8,6 +8,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  height: 100vh;
 }
 
 .card {
@@ -44,6 +50,7 @@ body {
 .card__body {
   position: relative;
 }
+
 .card__body::before {
   content: "";
   position: absolute;
@@ -90,9 +97,11 @@ body {
   font-size: 1rem;
   z-index: 999;
 }
+
 span.toggle-btn:hover {
   cursor: pointer;
 }
+
 .filter-btn a {
   position: absolute;
   width: 40px;
@@ -169,6 +178,7 @@ span.toggle-btn:hover {
 
   margin-top: 5px;
 }
+
 .card__add input {
   width: 100%;
   height: 40px;
@@ -203,6 +213,7 @@ span.toggle-btn:hover {
   cursor: pointer;
   outline: none;
 }
+
 .card__add i {
   width: 40px;
   height: 40px;
@@ -217,6 +228,7 @@ ul.todo {
   list-style: none;
   padding-left: 0;
 }
+
 ul.todo li {
   display: flex;
   justify-content: space-between;
@@ -237,6 +249,7 @@ ul.todo li {
 ul.todo#todo {
   padding-top: 30px;
 }
+
 ul.todo#completed {
   position: relative;
   padding: 30px 0;
@@ -283,9 +296,11 @@ ul.todo li .buttons button {
   padding: 5px 0 5px 5px;
   font-size: 1rem;
 }
+
 ul.todo li .buttons .remove {
   color: #aaa;
 }
+
 ul.todo li .buttons .remove:hover {
   color: #fa396b;
 }
